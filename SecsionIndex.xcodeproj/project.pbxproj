@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		141EE2451D34DD37005BA50E /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141EE2441D34DD37005BA50E /* DetailVC.swift */; };
 		14DBF56B1D34B4AA00378A23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DBF56A1D34B4AA00378A23 /* AppDelegate.swift */; };
-		14DBF56D1D34B4AA00378A23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DBF56C1D34B4AA00378A23 /* ViewController.swift */; };
-		14DBF5701D34B4AA00378A23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14DBF56E1D34B4AA00378A23 /* Main.storyboard */; };
 		14DBF5721D34B4AA00378A23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14DBF5711D34B4AA00378A23 /* Assets.xcassets */; };
 		14DBF5751D34B4AA00378A23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14DBF5731D34B4AA00378A23 /* LaunchScreen.storyboard */; };
+		14DBF57F1D34B8D600378A23 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DBF57E1D34B8D600378A23 /* Person.swift */; };
+		14DBF5811D34C22A00378A23 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DBF5801D34C22A00378A23 /* TableViewController.swift */; };
+		14DC2AA91D350A69007FF950 /* iconTalk.png in Resources */ = {isa = PBXBuildFile; fileRef = 14DC2AA71D350A69007FF950 /* iconTalk.png */; };
+		14DC2AAB1D351883007FF950 /* iconPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 14DC2AAA1D351883007FF950 /* iconPhone.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		141EE2441D34DD37005BA50E /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		14DBF5671D34B4AA00378A23 /* SecsionIndex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecsionIndex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14DBF56A1D34B4AA00378A23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		14DBF56C1D34B4AA00378A23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		14DBF56F1D34B4AA00378A23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14DBF5711D34B4AA00378A23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14DBF5741D34B4AA00378A23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14DBF5761D34B4AA00378A23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14DBF57E1D34B8D600378A23 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		14DBF5801D34C22A00378A23 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		14DC2AA71D350A69007FF950 /* iconTalk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconTalk.png; sourceTree = "<group>"; };
+		14DC2AAA1D351883007FF950 /* iconPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconPhone.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +61,24 @@
 			isa = PBXGroup;
 			children = (
 				14DBF56A1D34B4AA00378A23 /* AppDelegate.swift */,
-				14DBF56C1D34B4AA00378A23 /* ViewController.swift */,
-				14DBF56E1D34B4AA00378A23 /* Main.storyboard */,
+				14DBF5801D34C22A00378A23 /* TableViewController.swift */,
+				141EE2441D34DD37005BA50E /* DetailVC.swift */,
+				14DBF57E1D34B8D600378A23 /* Person.swift */,
 				14DBF5711D34B4AA00378A23 /* Assets.xcassets */,
 				14DBF5731D34B4AA00378A23 /* LaunchScreen.storyboard */,
 				14DBF5761D34B4AA00378A23 /* Info.plist */,
+				14DC2AA51D350A5A007FF950 /* image */,
 			);
 			path = SecsionIndex;
+			sourceTree = "<group>";
+		};
+		14DC2AA51D350A5A007FF950 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				14DC2AAA1D351883007FF950 /* iconPhone.png */,
+				14DC2AA71D350A69007FF950 /* iconTalk.png */,
+			);
+			name = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +139,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14DC2AA91D350A69007FF950 /* iconTalk.png in Resources */,
 				14DBF5751D34B4AA00378A23 /* LaunchScreen.storyboard in Resources */,
 				14DBF5721D34B4AA00378A23 /* Assets.xcassets in Resources */,
-				14DBF5701D34B4AA00378A23 /* Main.storyboard in Resources */,
+				14DC2AAB1D351883007FF950 /* iconPhone.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +153,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14DBF56D1D34B4AA00378A23 /* ViewController.swift in Sources */,
+				14DBF57F1D34B8D600378A23 /* Person.swift in Sources */,
+				141EE2451D34DD37005BA50E /* DetailVC.swift in Sources */,
+				14DBF5811D34C22A00378A23 /* TableViewController.swift in Sources */,
 				14DBF56B1D34B4AA00378A23 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +163,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		14DBF56E1D34B4AA00378A23 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				14DBF56F1D34B4AA00378A23 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		14DBF5731D34B4AA00378A23 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,6 +300,7 @@
 				14DBF57B1D34B4AA00378A23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
